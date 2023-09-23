@@ -10,8 +10,6 @@ class EditProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityEditProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
         val bundle = intent.extras
         if (bundle != null) {
             val resId = bundle.getInt("image")
