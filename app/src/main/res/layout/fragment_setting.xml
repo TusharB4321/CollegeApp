@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    android:orientation="vertical"
+    tools:context=".fragments.SettingFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20sp"
+        android:textSize="35sp"
+        android:padding="5sp"
+        android:textStyle="bold"
+        android:text="@string/settings" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/userProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12sp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/tushar"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20sp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:text="Tushar Bodalwar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_marginTop="5sp"
+                android:textStyle="bold"
+                android:text="@string/number" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/right_arrow"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/setting_rect"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="-10dp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="5sp"
+            android:src="@drawable/notify"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/notification"
+            android:textSize="22sp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+       <ImageView
+           android:layout_width="30dp"
+           android:layout_height="40dp"
+           android:layout_weight="1"
+           android:layout_marginBottom="3dp"
+           android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/setting_rect"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="-10dp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="5sp"
+            android:src="@drawable/privacyy"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Privacy"
+            android:textSize="22sp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/setting_rect"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="-10dp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="5sp"
+            android:src="@drawable/key"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Security"
+            android:textSize="22sp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/termCondition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/setting_rect"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="-10dp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="5sp"
+            android:src="@drawable/termm"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Term and Condition"
+            android:textSize="22sp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/setting_rect"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="-10dp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="5sp"
+            android:src="@drawable/about"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="22sp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/setting_rect"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="-10dp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="5sp"
+            android:src="@drawable/feedback"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feedback"
+            android:textSize="22sp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/askQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/setting_rect"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="-10dp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="5sp"
+            android:src="@drawable/que"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ask a Question"
+            android:textSize="22sp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/faq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/setting_rect"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="-10dp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="5sp"
+            android:src="@drawable/faq"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FAQ"
+            android:textSize="22sp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/logOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:background="@drawable/setting_rect"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="-10dp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="5sp"
+            android:src="@drawable/logout"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textSize="22sp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="normal"
+            android:layout_weight="1"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/right_arrow"/>
+    </LinearLayout>
+
+
+   </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

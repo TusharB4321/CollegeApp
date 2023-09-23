@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="55dp"
+    android:background="@drawable/branch_back"
+    android:layout_margin="5sp"
+    android:orientation="horizontal"
+    android:id="@+id/branch_layout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/branch_img"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:src="@drawable/branch"/>
+
+    <TextView
+        android:id="@+id/branch_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginStart="8dp"
+        android:text="@string/branch_name"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.collegeapp.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/branchFragment"
+        android:name="com.example.collegeapp.fragments.BranchFragment"
+        android:label="fragment_branch"
+        tools:layout="@layout/fragment_branch" >
+        <action
+            android:id="@+id/action_branchFragment_to_firstYearFragment"
+            app:destination="@id/firstYearFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.collegeapp.fragments.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.collegeapp.fragments.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+    </fragment>
+    <fragment
+        android:id="@+id/firstYearFragment"
+        android:name="com.example.collegeapp.fragments.YearFragment.FirstYearFragment"
+        android:label="fragment_third_year"
+        tools:layout="@layout/fragment_third_year" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.collegeapp.fragments.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+</navigation>
