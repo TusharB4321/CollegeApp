@@ -62,6 +62,8 @@ class MessageActivity : AppCompatActivity() {
         binding.image.setOnClickListener {
             startActivity(Intent(this@MessageActivity,EditProfileActivity::class.java))
             finish()
+
+
         }
 
         binding.send.setOnClickListener{
